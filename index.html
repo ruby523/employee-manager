@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Employee List</h1>
+
+  <div id="employee-list">
+    <!-- Employees will appear here -->
+  </div>
+
+  <button onclick="showAddForm()">Add Employee</button>
+
+  <!-- Add Employee Form (hidden by default) -->
+  <div id="add-form" style="display: none;">
+    <h2>Add New Employee</h2>
+    <input type="text" id="name" placeholder="Name" />
+    <input type="text" id="phone" placeholder="Phone Number" />
+    <input type="text" id="address" placeholder="Address" />
+    <button onclick="saveEmployee()">Save</button>
+    <button onclick="hideAddForm()">Cancel</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
